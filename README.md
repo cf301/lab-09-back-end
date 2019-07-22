@@ -9,14 +9,22 @@ To get the weather and location of the user's specified query.
 ## Getting Started
 Git clone and npm install dependencies.
 
+to install locally and run off a PG there:
+psql -d city_explorer -f schema.sql
+
+to run heroku:
+add postgres SQL to heroku dependencies.
+add .env api keys
+push tables to heroku:
+heroku pg:push city_explorer DATABASE_URL
+
 ## Architecture
 Technologies: Node.js, Express
 APIs used: Darksky, Google Maps Geodata
 
 ## Change Log
 
-to install locally and run off a PG there:
-psql -d city_explorer -f schema.sql
+
 
 Number and name of feature: Location
 
